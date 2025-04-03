@@ -23,7 +23,7 @@ export const App = () => {
   };
 
   const handleClearSelection = () => {
-    setSelectedGood('');
+    setSelectedGood(' ');
   };
 
   return (
