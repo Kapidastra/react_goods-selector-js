@@ -22,8 +22,8 @@ export const App = () => {
     setSelectedGood(good);
   };
 
-  const handleClearSelection = () => {
-    setSelectedGood(' ');
+  const clearSelection = () => {
+    setSelectedGood('');
   };
 
   return (
@@ -35,7 +35,7 @@ export const App = () => {
             data-cy="ClearButton"
             type="button"
             className="delete ml-3"
-            onClick={handleClearSelection}
+            onClick={clearSelection}
           />
         )}
       </h1>
@@ -66,7 +66,7 @@ export const App = () => {
                     data-cy="RemoveButton"
                     type="button"
                     className="button is-info"
-                    onClick={handleClearSelection}
+                    onClick={clearSelection}
                   >
                     -
                   </button>
